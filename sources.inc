@@ -1,0 +1,16 @@
+TARGETTYPE=DRIVER
+
+!IF !DEFINED(TARGETNAME)
+TARGETNAME=block_process_execute
+!ENDIF
+
+
+!IF !DEFINED(TARGETPATH)
+TARGETPATH=..\bin
+!ENDIF
+
+INCLUDES=$(DDK_INC_PATH);..\inc
+
+SOURCES= \
+    ..\main.c
+
